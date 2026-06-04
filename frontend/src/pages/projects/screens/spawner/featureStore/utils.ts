@@ -16,7 +16,7 @@ export const FEATURE_STORE_CODE_DESCRIPTION =
 
 export const generateFeatureStoreCode = (): string => {
   return `from feast import FeatureStore
-fs = FeatureStore(fs_yaml_file='/opt/app-root/src/feature_store.yaml')
+fs = FeatureStore(fs_yaml_file='feast-configs/<project_name>')
 fs.list_feature_views()
 fs.get_historical_features(.....)
 fs.get_online_features(.....)`;
